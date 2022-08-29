@@ -1,14 +1,16 @@
+
 //
 //  SecondScreen.swift
 //  windowchange
 //
 //  Created by Vitor on 26/08/2022.
 //
-
 import SwiftUI
 
 struct SecondView: View {
+    @State var isOpen: Bool = false
     var body: some View {
+        
         
             VStack{
                 Image(systemName: "airplane")
@@ -32,26 +34,35 @@ struct SecondView: View {
                     .padding()
                 
                 VStack{
+            
                     
-                    Button(action: goHome, label: {
-                        HStack{
-                            Image(systemName: "bell")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(
-                                    width: 50,
-                                    height: 50,
-                                    alignment: .center)
-                                .padding()
-                            Text("Alert me !!")
-                                .frame(
-                                    width: 200,
-                                    height: 50,
-                                    alignment: .center)
-                                .foregroundColor(Color.red)
-                                .cornerRadius(8)
-                        }.border(Color.blue, width: 0.5)
-                    })
+                    Button(action: {
+                                    self.isOpen = true
+                                }, label: {
+                                    HStack{
+                 
+                                        Image(systemName: "bell")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(
+                                                width: 50,
+                                                height: 50,
+                                                alignment: .center)
+                                            .padding()
+                                        Text("Alert me !!")
+                                            .frame(
+                                                width: 200,
+                                                height: 50,
+                                                alignment: .center)
+                                            .foregroundColor(Color.red)
+                                            .cornerRadius(8)
+                                    }
+                    
+                                }) .border(Color.blue, width: 0.5)
+                                   .sheet(isPresented: $isOpen, content: {
+                                   SwiftUIAlert()
+                                  
+                                })
                     
                     Button(action: goHome, label: {
                         HStack{
@@ -114,6 +125,7 @@ struct SecondView: View {
             window.makeKeyAndVisible()
         }
     }
+   
 }
 
 struct SecondScreen_Previews: PreviewProvider {

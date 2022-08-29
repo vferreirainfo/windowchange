@@ -16,6 +16,8 @@
 		6C0D75B028B9186E001F6517 /* windowchangeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D75AF28B9186E001F6517 /* windowchangeUITestsLaunchTests.swift */; };
 		6C0D75BD28B96A46001F6517 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D75BC28B96A46001F6517 /* SecondScreen.swift */; };
 		6C0D75BF28BAB0D4001F6517 /* SwiftUIAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D75BE28BAB0D4001F6517 /* SwiftUIAlert.swift */; };
+		6C0D75C128BD1DF3001F6517 /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0D75C028BD1DF3001F6517 /* CustomAlert.xib */; };
+		6C0D75C328BD3094001F6517 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D75C228BD3094001F6517 /* CustomAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		6C0D75AF28B9186E001F6517 /* windowchangeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windowchangeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6C0D75BC28B96A46001F6517 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		6C0D75BE28BAB0D4001F6517 /* SwiftUIAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAlert.swift; sourceTree = "<group>"; };
+		6C0D75C028BD1DF3001F6517 /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
+		6C0D75C228BD3094001F6517 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 		6C0D759128B9186B001F6517 /* windowchange */ = {
 			isa = PBXGroup;
 			children = (
+				6C0D75C028BD1DF3001F6517 /* CustomAlert.xib */,
+				6C0D75C228BD3094001F6517 /* CustomAlert.swift */,
 				6C0D759228B9186B001F6517 /* windowchangeApp.swift */,
 				6C0D759428B9186B001F6517 /* ContentView.swift */,
 				6C0D759628B9186D001F6517 /* Assets.xcassets */,
@@ -237,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0D75C128BD1DF3001F6517 /* CustomAlert.xib in Resources */,
 				6C0D759A28B9186D001F6517 /* Preview Assets.xcassets in Resources */,
 				6C0D759728B9186D001F6517 /* Assets.xcassets in Resources */,
 			);
@@ -267,6 +274,7 @@
 				6C0D759528B9186B001F6517 /* ContentView.swift in Sources */,
 				6C0D759328B9186B001F6517 /* windowchangeApp.swift in Sources */,
 				6C0D75BD28B96A46001F6517 /* SecondScreen.swift in Sources */,
+				6C0D75C328BD3094001F6517 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
